@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Parte do cabeçalho-->
+    <div id="clienteCabecalho">
+        <h1>Cliente - LionWeb</h1>
+    </div>
+    <!----------------------------------------------------------->
+    <!--Container que segura todas as divs-->
+    <div id="conteiner"> 
+
+        <!--Área do botão cadastrar-->
+        <div id="cadastrarCliente">
+          <button>Cadastrar Cliente</button>
+        </div>
+        <!----------------------------------------------------------->
+        <!--Titulos de cadastro-->
+            <div id="titulos">
+                <label for="">Nome</label>
+
+                <label for="">Email</label>
+
+                <label for="">Celular</label>
+
+                <label for="">Cidade</label>
+
+                <label for="">Ação</label>
+            </div>
+            <!------------------------------------------------------>
+            <!--Clientes cadastrados -->
+            <div id="CadastrosFeitos">
+                <div class="cadastroNome">Maria da Silva</div>
+                <div class="cadastroEmail">maria_123@gmail.com</div>
+                <div class="cadastroCelular">11 40028922</div>
+                <div class="cadastroCidade">Jandira</div>
+                <div class="cadastroAcao">
+                    <button class="btnEditar">Editar</button>
+                    <button class="btnExcluir">Excluir</button>
+                </div>
+            </div>
+            <div id="CadastrosFeitos">
+                <div class="cadastroNome">José Carlos</div>
+                <div class="cadastroEmail">Jose.14@gmail.com</div>
+                <div class="cadastroCelular">11 408569422</div>
+                <div class="cadastroCidade">Itapevi</div>
+                <div class="cadastroAcao">
+                    <button class="btnEditar">Editar</button>
+                    <button class="btnExcluir">Excluir</button>
+                </div>
+            </div>
+            <!--Novo cadastro (formulário)-->
+            <form id="novoCliente">
+                <div id="tituloNovoCliente">
+                    <h2>Novo Cliente</h2>
+                </div>
+                <div id="fechar">
+                     <button id="btnFechar">X</button>  
+                </div>
+                <div id="nameEmail">
+                    <input type="text" id="nome" placeholder="Nome Completo" required/>
+                    <input type="text" id="Email" placeholder="E-mail" required>
+                </div>
+
+                <!--Botoes do formulário-->
+                <div id="celularCidade">
+                    <input type="number" id="celular" min="0"  placeholder="Celular" required/>
+                    <input type="text" id="cidade" placeholder="Cidade" required>
+                </div>
+                <div id="campoBotoes">
+                    <button id="cancelar">Cancelar</button>
+                    <button id="salvar">Salvar</button>
+                </div>   
+            </form>
+        </div>    
+            <!--Rodapé-->
+            <div id="rodape">
+                    Copyright © Guilherme Rodrigues 
+            </div>
+</body>
+</html>
